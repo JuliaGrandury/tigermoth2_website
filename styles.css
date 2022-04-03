@@ -46,7 +46,7 @@ nav li{
     font-family: "Lato Black";
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    font-size: 14px;
+    font-size: 12px;
     padding: 0.5rem 1rem;
 }
 nav li:hover{
@@ -74,6 +74,7 @@ nav li:hover{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 3fr 1fr;
+    margin-top: 7%;
 }
 .home.logo{
     grid-column: 1/2;
@@ -88,7 +89,7 @@ nav li:hover{
     color: #edf5e1;
     font-family: "Lato Black";
     text-transform: uppercase;
-    font-size: 100px;
+    font-size: 80px;
     letter-spacing: 0.65rem;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -103,12 +104,15 @@ nav li:hover{
 }
 .home p{
     margin-top: 0;
+    margin-right: 5rem;
     padding-right: 1rem;
+    font-size: 12px;
 }
 
 
 /* DIV: WORK CONTAINER */
 .second{
+    margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -121,10 +125,14 @@ nav li:hover{
 }
 .work a{
     font-family: "Lato Bold";
+    font-size: 14px;
     color: #edf5e1;
     text-decoration: none;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
+}
+.work p{
+    font-size: 13px;
 }
 .work:hover{
     background-color: #379683;
