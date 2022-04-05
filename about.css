@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.column{
+    float: left;
+    width: 30%;
+    margin: 1rem;
+    padding: 2rem;
+    border: 1px solid #64ffda;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
