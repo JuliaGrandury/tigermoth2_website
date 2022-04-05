@@ -17,6 +17,7 @@
 }
 
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -28,9 +29,9 @@ body{
     font-family: "Lato Regular";;
 }
 
-/*-----------------------*/
+
+
 /* DIV: NAVBAR CONTAINER */
-/*-----------------------*/
 nav{
     width: 100%;
     margin-bottom: 2rem;
@@ -69,12 +70,13 @@ nav li:hover{
     padding: 2rem 0;
 }
 
-/*---------------------*/
+
+
+
 /* DIV: HOME CONTAINER */
-/*---------------------*/
 .first{
     width: 80%;
-    margin: 7% 10%;
+    margin: 8% 10%;
 }
 .first img{
     float: left;
@@ -87,17 +89,19 @@ nav li:hover{
     text-transform: uppercase;
     color: #edf5e1;
     padding-bottom: 2rem;
+    text-align: center;
 }
 .first p{
     font-family: 'PT Mono';
+    font-weight: 600;
     text-align: justify;
 }
-
 
 
 /* DIV: WORK CONTAINER */
 .second{
     margin-top: 5%;
+    margin-bottom: 8%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -107,7 +111,6 @@ nav li:hover{
     border-radius: 5px;
     background-color: #379683;
     text-align: center;
-    /* min-width: 260px; */
 }
 .work a{
     font-family: "Lato Bold";
@@ -125,6 +128,7 @@ nav li:hover{
 }
 
 
+
 /* FOOTER */
 footer{
     font-size: 12px;
@@ -135,25 +139,23 @@ footer{
 
 
 /* MEDIA QUERIES */
-@media only screen and (min-width: 600px){
-    /* make work cards stack */
-    .work{
+@media only screen and (max-width: 600px){
+    /* make work cards stack for screens smaller than 600px */
+    .column{
         width: 100%;
     }
 }
 
 
-
 /* ADDING BOUNCE EFFECT */
+.bounce img{
+    margin: 0 50%;
+}
 .bounce {
+    width: 100%;
     position:fixed;
-    left:50%;
-    bottom: 20px;
     margin-top:-25px;
-    margin-left:-25px;
-    height:50px;
-    width:50px;
-    background:red;
+    margin-left:-30px;
     -webkit-animation:bounce 2s infinite;
     -moz-animation:bounce 2s infinite;
     -o-animation:bounce 2s infinite;
